@@ -33,7 +33,8 @@ function App() {
           conditionText: data.current.condition.text,
           icon: data.current.condition.icon,
         });
-      });
+      })
+      .catch(err => alert(`An error occurred. Please retry. ${err}`));
   };
   return (
     <div className="wrapper">
