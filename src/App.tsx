@@ -23,7 +23,7 @@ function App() {
   });
   const getWeather = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    fetch(`https://api.weatherapi.com/v1/current.json?key=86e7e071a084414b836120742231910&q=${city}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q=${city}&aqi=no`)
       .then(res => res.json())
       .then(data => {
         setResults({
