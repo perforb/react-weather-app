@@ -1,9 +1,9 @@
-import './App.css';
-import Title from "./components/Title";
-import Form from "./components/Form";
-import Results from "./components/Results";
 import React, {useState} from "react";
-import Loading from "./components/Loading";
+import './App.css';
+import {Title} from "./components/Title";
+import {Results} from "./components/Results";
+import {Loading} from "./components/Loading";
+import {Form} from "./components/Form";
 
 type ResultsStateType = {
   country: string
@@ -52,4 +52,4 @@ function App() {
   );
 }
 
-export default App;
+export {App};

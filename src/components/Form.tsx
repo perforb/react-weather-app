@@ -15,4 +15,4 @@ const Form = ({city, setCity, getWeather}: FormPropsType) => {
   );
 };
 
-export default Form;
+export {Form};

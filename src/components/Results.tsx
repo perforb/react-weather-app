@@ -23,4 +23,4 @@ const Results = ({results}: ResultsPropsType) => {
   );
 };
 
-export default Results;
+export {Results};
